@@ -1,22 +1,22 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".sidebar nav a");
+// Script to highlight the active section title in the sidebar
+window.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('section');
+  const sidebarLinks = document.querySelectorAll('.sidebar-link');
 
-  window.addEventListener("scroll", () => {
-    let current = "";
+  let current = '';
 
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      if (pageYOffset >= sectionTop - 60) {
-        current = section.getAttribute("id");
-      }
-    });
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute('id');
+    }
+  });
 
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href").substring(1) === current) {
-        link.classList.add("active");
-      }
-    });
+  sidebarLinks.forEach((link) => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
   });
 });
+
