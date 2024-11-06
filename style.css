@@ -59,3 +59,11 @@ p {
   margin-bottom: 20px;
 }
 
+nav a.active {
+  color: #90bfc5; /* Highlights the active section title */
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
