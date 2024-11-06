@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Caroline Porche's Website</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mila Dutton | Personal Website</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Add Font Awesome link here -->
 </head>
 <body>
-  <div class="sidebar">
-    <img src="avatar.jpg" alt="Avatar" class="avatar">
-    <h1 class="name">CAROLINE PORCHE</h1>
-    <nav class="sidebar-nav">
-      <a href="#about" class="sidebar-link">ABOUT</a>
-      <a href="#research" class="sidebar-link">RESEARCH</a>
-      <a href="#teaching" class="sidebar-link">TEACHING</a>
-      <a href="#projects" class="sidebar-link">PROJECTS</a>
-    </nav>
-  </div>
+    <div class="sidebar">
+        <img src="avatar.jpg" alt="Headshot of Mila Dutton" class="avatar">
+        <h1>MILA DUTTON</h1>
+        <nav>
+            <a href="#about" class="sidebar-link" id="link-about">ABOUT</a>
+            <a href="#research" class="sidebar-link" id="link-research">RESEARCH</a>
+            <a href="#projects" class="sidebar-link" id="link-projects">PROJECTS</a>
+        </nav>
+        <div class="social-icons">
+            <a href="https://github.com/miladutton" target="_blank" class="icon-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mila-dutton-2a4897200/" target="_blank" class="icon-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:mila.dutton@gmail.com" class="icon-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+    
+    <div class="content">
+        <section id="about">
+            <h2>ABOUT</h2>
+            <p>My name is Mila, and I am a Computational Social Science Masters student at UC San Diego.
+                I am deeply interested in leveraging technology to enhance both physical and mental healthcare. 
+                Specifically, I am passionate about utilizing artificial intelligence to improve digital therapeutics, 
+                making healthcare more accessible and personalized. By integrating AI into therapeutic tools, I aim to 
+                create solutions that provide better, more efficient care for individuals, especially those with limited 
+                access to traditional healthcare services.
+            </p>
+            <div class="subsection" id="cv">
+                <h3>CV</h3>
+                <iframe src="https://drive.google.com/file/d/13tFgmSf8jAFcqcR8n3rttk1ULP6OfQLj/preview" width="640" height="480" allow="autoplay"></iframe>
+            </div>
+        </section>
+        
+        <section id="research">
+            <h2>RESEARCH</h2>
+            <p>Your research content goes here.</p>
+        </section>
 
-  <div class="content">
-    <section id="about">
-      <h2>ABOUT</h2>
-      <h3>CV</h3>
-      <p>Your CV content goes here...</p>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are a couple of research projects I completed during my undergraduate studies:</p>
 
-    <section id="research">
-      <h2>RESEARCH</h2>
-      <h3>Peer-Reviewed Research</h3>
-      <p>Details of peer-reviewed research...</p>
+            <h3>Psychology 100: Research Methods</h3>
+            <p><strong>Research Topic:</strong> The impact of marijuana on schizophrenic symptoms. This archival data analysis explores existing research on the effects of marijuana consumption on individuals with schizophrenia, considering both positive and negative outcomes.</p>
+            <div class="project-embed">
+                <h4>Archival Data Analysis: The Impact of Marijuana on Schizophrenic Symptoms</h4>
+                <iframe src="https://drive.google.com/file/d/1e41sSge9ZFv3bu62-fbJVgc7ShTbJIyT/preview" width="640" height="480" allow="autoplay"></iframe>
+            </div>
 
-      <h3>Working Papers</h3>
-      <p>Your working papers content...</p>
-    </section>
+            <h3>Psychology 182: Qualitative Research Methods</h3>
+            <p><strong>Research Topic:</strong> Surveys on the impact of the COVID-19 lockdown on body image perception. This project utilized qualitative research methods to understand how the COVID-19 lockdown affected individuals' perceptions of their body image.</p>
+            <div class="project-embed">
+                <h4>Survey: The Impact of the COVID Lockdown on Body Image Perception</h4>
+                <iframe src="https://drive.google.com/file/d/1xs5PwmfUmI2pQb5rWAdFJy-uFZAz2pSU/preview" width="640" height="480" allow="autoplay"></iframe>
+            </div>
+        </section>
+    </div>
 
-    <section id="teaching">
-      <h2>TEACHING</h2>
-      <h3>Computational Social Science</h3>
-      <p>Course details...</p>
-
-      <h3>Political Science</h3>
-      <p>Course details...</p>
-    </section>
-
-    <section id="projects">
-      <h2>PROJECTS</h2>
-      <p>Your projects content...</p>
-    </section>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
